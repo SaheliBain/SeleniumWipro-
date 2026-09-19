@@ -202,3 +202,116 @@ driver.quit()
 
 **6. Result, Observation, and Conclusion**
 The script successfully detected the browser-level alert, switched focus, and closed it, verifying the ability to bypass standard DOM elements when dealing with native browser dialogs.
+
+---
+
+---
+
+**Experiment 5: Handling Checkboxes and Radio Buttons**
+
+**1. Problem Statement**
+Automate the selection of standard HTML radio buttons and checkboxes on a web form to simulate a user making specific choices.
+
+**2. Objective**
+To demonstrate locating and interacting with stateful web controls (radio buttons and checkboxes) using Selenium WebDriver on the Rahul Shetty Academy practice page.
+
+**3. Tools, Software, and Concepts Used**
+
+Python 3
+
+Selenium WebDriver
+
+Concepts: DOM locators (By.ID, By.XPATH), Web Element interactions (click()).
+
+**4. Implementation Steps & Source Code**
+The script navigates to the practice page, locates a specific radio button using an XPath value attribute, and selects multiple checkboxes using their HTML ID attributes.
+
+```python
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+driver = webdriver.Chrome()
+driver.get("https://rahulshettyacademy.com/AutomationPractice/")
+driver.maximize_window()
+
+driver.find_element(By.XPATH, "//input[@value='radio1']").click()
+
+driver.find_element(By.ID, "checkBoxOption1").click()
+driver.find_element(By.ID, "checkBoxOption2").click()
+
+time.sleep(2)
+driver.save_screenshot("module1_exp5_output.png")
+driver.quit()
+```
+**5. Output**
+<img width="1920" height="842" alt="module1_exp5_output" src="https://github.com/user-attachments/assets/14b34ba1-8b96-471b-8c87-8a014921f14d" />
+
+
+**6. Result, Observation, and Conclusion**
+The script executed successfully, proving that standard click() operations in Selenium effectively toggle the state of both radio buttons and checkboxes.
+
+---
+
+**Experiment 6: Advanced Interactions - Mouse Hover**
+
+**1. Problem Statement**
+Automate a browser interaction that requires scrolling to a specific element and hovering over it to reveal a hidden dropdown menu, then clicking an element within that menu.
+
+**2. Objective**
+To demonstrate the use of ActionChains for hover events and explicit waits for element synchronization.
+
+**3. Tools, Software, and Concepts Used**
+
+Python 3
+
+Selenium WebDriver
+
+Concepts: ActionChains (move_to_element), Explicit Waits (WebDriverWait), JavaScript scrolling.
+
+**4. Implementation Steps & Source Code**
+The script uses an explicit wait to find the "Point Me" button, scrolls it into the center of the viewport, and uses ActionChains to hover over it. It then waits for the "Mobiles" sub-menu to become visible before clicking it.
+
+```python
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import time
+
+driver = webdriver.Chrome()
+driver.get("https://testautomationpractice.blogspot.com/")
+driver.maximize_window()
+
+wait = WebDriverWait(driver, 10)
+point_me = wait.until(
+    EC.presence_of_element_located((By.XPATH, "//button[contains(text(),'Point Me')]"))
+)
+
+driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", point_me)
+time.sleep(1)
+
+actions = ActionChains(driver)
+actions.move_to_element(point_me).perform()
+time.sleep(2)
+
+mobiles = wait.until(
+    EC.visibility_of_element_located((By.XPATH, "//a[normalize-space()='Mobiles']"))
+)
+
+# Take the screenshot exactly while the dropdown is open
+driver.save_screenshot("module1_exp6_output.png")
+
+# Perform the click after taking the picture
+mobiles.click()
+
+time.sleep(2)
+driver.quit()
+```
+**5. Output**
+<img width="1920" height="842" alt="module1_exp6_output" src="https://github.com/user-attachments/assets/431472c3-9e9d-4268-8277-779e05f5edcd" />
+
+
+**6. Result, Observation, and Conclusion**
+The script executed successfully. The ActionChains correctly simulated the physical mouse hover, triggering the dynamic dropdown menu, and the explicit wait ensured the sub-element was clickable before execution
