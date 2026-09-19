@@ -30,8 +30,7 @@ Feature: Basic Web Navigation
     Then the page title should contain "Automation"
 ```
 File: features/steps/login_steps.py
-```
-Python
+```python
 from behave import given, when, then
 from selenium import webdriver
 
@@ -53,6 +52,8 @@ def step_impl_verify(context, text):
 
 **5. Output**
 <img width="1920" height="842" alt="image" src="https://github.com/user-attachments/assets/7359fff0-430a-45cd-a7bb-af34e12ed77f" />
+
+
 <img width="1311" height="452" alt="Screenshot 2026-09-19 230507" src="https://github.com/user-attachments/assets/3e833ec3-4e04-4626-9584-7393c8632be4" />
 
 
