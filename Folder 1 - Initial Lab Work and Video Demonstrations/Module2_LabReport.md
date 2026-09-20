@@ -2,7 +2,7 @@
 
 ---
 
-**Experiment 1: PyTest Implementation with Page Object Model (POM)**
+# Experiment 1: PyTest Implementation with Page Object Model (POM)
 
 **1. Problem Statement**
 Automate a login sequence using a structured testing framework rather than a linear script, ensuring the test logic is separated from the web element locators for better maintainability.
@@ -60,7 +60,7 @@ The framework successfully executed the test utilizing the POM structure. The Py
 
 ---
 
-**Experiment 2: Data-Driven Automation (DDT)**
+# Experiment 2: Data-Driven Automation (DDT)
 
 **1. Problem Statement**
 Automate a script that reads multiple sets of test data to execute the same test logic iteratively without duplicating code.
@@ -114,7 +114,7 @@ The framework successfully executed the same test sequence multiple times with d
 
 ---
 
-**Experiment 3: PyTest HTML Reporting**
+# Experiment 3: PyTest HTML Reporting
 
 **1. Problem Statement**
 Generate a structured, easily readable execution report for automated test suites to share with stakeholders.
