@@ -1,7 +1,7 @@
 # Module 3: Python BDD Restful Automations
 
 ---
-**Experiment 1: Selenium Web Automation with Behave BDD**
+# Experiment 1: Selenium Web Automation with Behave BDD
 
 **1. Problem Statement**
 Automate a basic web navigation scenario using Behavior-Driven Development (BDD) to ensure business-readable test definitions execute properly against a web UI.
@@ -64,7 +64,7 @@ The Behave test runner successfully parsed the Gherkin feature file and executed
 
 ---
 
-**Experiment 2: Data-Driven API Automation with Python Behave**
+# Experiment 2: Data-Driven API Automation with Python Behave
 
 **1. Problem Statement**
 Automate the validation of a RESTful API using multiple sets of test data to confirm the server returns correct HTTP status codes for both valid and invalid endpoints.
@@ -123,7 +123,7 @@ The framework successfully read the external datasets from the Gherkin Examples 
 
 ---
 
-**Experiment 3: Selenium Page Object Model (POM) in Python Behave**
+# Experiment 3: Selenium Page Object Model (POM) in Python Behave
 
 **1. Problem Statement**
 Restructure a standard BDD web automation test to utilize the Page Object Model design pattern for better maintainability and locator separation.
