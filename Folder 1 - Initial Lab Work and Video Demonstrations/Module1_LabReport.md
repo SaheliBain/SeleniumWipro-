@@ -2,7 +2,7 @@
 
 ---
 
-**Experiment 1: Core Fundamentals & Locators**
+# Experiment 1: Core Fundamentals & Locators
 
 **1. Problem Statement**
 Automate the interaction with basic web form elements using standard locators to simulate a user entering data.
@@ -44,7 +44,7 @@ The script executed successfully, demonstrating reliable interaction with standa
 
 ---
 
-**Experiment 2: Advanced Interactions - Drag and Drop**
+# Experiment 2: Advanced Interactions - Drag and Drop
 
 **1. Problem Statement**
 Automate a browser interaction that requires clicking and holding a web element, dragging it across the screen, and releasing it precisely into a designated target container.
@@ -94,7 +94,7 @@ The script executed successfully. The ActionChains correctly simulated the physi
 
 ---
 
-**Experiment 3: Keyboard Actions and Element Focus**
+# Experiment 3: Keyboard Actions and Element Focus
 
 **1. Problem Statement**
 Automate the process of typing text into a specific input panel, highlighting it, copying it, and pasting it into a secondary input panel using simulated keyboard shortcuts.
@@ -153,7 +153,7 @@ The script successfully simulated the keyboard shortcuts. The text was dynamical
 
 ---
 
-**Experiment 4: Handling JavaScript Alerts**
+# Experiment 4: Handling JavaScript Alerts
 
 **1. Problem Statement**
 Automate the interaction with a browser-native JavaScript popup alert.
@@ -207,7 +207,7 @@ The script successfully detected the browser-level alert, switched focus, and cl
 
 ---
 
-**Experiment 5: Handling Checkboxes and Radio Buttons**
+# Experiment 5: Handling Checkboxes and Radio Buttons
 
 **1. Problem Statement**
 Automate the selection of standard HTML radio buttons and checkboxes on a web form to simulate a user making specific choices.
@@ -253,7 +253,7 @@ The script executed successfully, proving that standard click() operations in Se
 
 ---
 
-**Experiment 6: Advanced Interactions - Mouse Hover**
+# Experiment 6: Advanced Interactions - Mouse Hover
 
 **1. Problem Statement**
 Automate a browser interaction that requires scrolling to a specific element and hovering over it to reveal a hidden dropdown menu, then clicking an element within that menu.
