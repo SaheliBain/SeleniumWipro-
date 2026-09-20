@@ -44,6 +44,7 @@ Web Navigation And Verification
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/66e69eb8-6041-48d5-9725-b7fa03497a6e" />
 
 **6. Result, Observation, and Conclusion**
+
 The Robot Framework successfully launched the Chrome browser and parsed the keyword-driven script. The "Input Text" keyword correctly populated the form with the specified string, and the "Page Should Contain Element" keyword successfully validated the DOM, demonstrating a functional setup of the SeleniumLibrary.
 
 ---
@@ -110,6 +111,7 @@ Attempt Login
 <img width="1170" height="452" alt="image" src="https://github.com/user-attachments/assets/faa29cfc-9b52-4718-8e29-156fe0ed4831" />
 
 **6. Result, Observation, and Conclusion**
+
 The Robot Framework successfully imported external variables from test_data.robot and mapped them to the main script. The Test Template setting efficiently acted as a loop, executing the "Attempt Login" keyword twice using the provided arguments. The generation of two separate screenshots (selenium-screenshot-1.png and selenium-screenshot-2.png) visually confirms that both sets of test data were processed iteratively.
 
 ---
@@ -171,4 +173,5 @@ Close The Application
 
 
 **6. Result, Observation, and Conclusion**
+
 The test case successfully executed the abstracted custom keywords. By moving the raw Selenium commands (Open Browser, Input Text, Click Button) into the *** Keywords *** section, the main test case became significantly more readable. The script successfully navigated the e-commerce site, searched for the defined product argument, and validated the results screen.
