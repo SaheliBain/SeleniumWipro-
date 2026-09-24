@@ -10,4 +10,4 @@
 )
 * **[Insert Course Name Here]** (Coursera)
   * **Duration:** September 21, 2026 – September 25, 2026
-  * **Credential:** [View Certificate](https://coursera.org/share/8ed96ea06a51c29a83026fa2305c25ba)
+  * **Credential:** ([View Certificate](https://coursera.org/share/8ed96ea06a51c29a83026fa2305c25ba))
