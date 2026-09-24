@@ -43,7 +43,7 @@ Feature: API User Management and Performance Benchmarking
     When I send a DELETE request to "/users/1"
     Then the response status code should be 200
 ```
-B. Environment Hooks (features/environment.py)
+### B. Environment Hooks (features/environment.py)
 ```Python
 import matplotlib.pyplot as plt
 from features.utils.api_client import APIClient
@@ -65,7 +65,7 @@ def after_all(context):
     plt.tight_layout()
     plt.savefig('api_performance_visual.png')
 ```
-C. Core API Client (features/utils/api_client.py)
+### C. Core API Client (features/utils/api_client.py)
 ```Python
 import requests
 
@@ -89,7 +89,7 @@ class APIClient:
     def delete(self, endpoint):
         return requests.delete(f"{self.base_url}{endpoint}", headers=self.headers)
 ```
-D. Step Definitions (features/steps/api_steps.py)
+### D. Step Definitions (features/steps/api_steps.py)
 ```Python
 from behave import given, when, then
 from features.utils.payload_generator import generate_user_payload
